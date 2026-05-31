@@ -45,28 +45,28 @@ A simple timer/stopwatch app that mirrors VibeTimer's core concepts — familiar
 
 Work through these in order. Each checkpoint builds on the last.
 
-### Day 1 — Foundations
+### Day 1 — Foundations ✅ DONE (cheat sheet: `notes/day1_cheatsheet.md`)
 
-- [ ] **CP1 — Dart basics**
+- [x] **CP1 — Dart basics**
   - Variables, types, `null` safety (`?`, `!`, `??`)
   - Functions, named params (`{required}`)
   - Classes, constructors, `const`
   - `async` / `await` / `Future` / `Stream`
   - *SwiftUI parallel:* Dart is closer to Swift than you'd expect. `const` ≈ compile-time `let`. Named params ≈ Swift argument labels.
 
-- [ ] **CP2 — First Flutter app**
+- [x] **CP2 — First Flutter app**
   - `flutter create vibe_flutter`
   - Understand `pubspec.yaml` (≈ `Package.swift` + app metadata)
   - Understand `lib/main.dart` entry point — `runApp()` ≈ `@main` + `WindowGroup`
   - Hot reload vs hot restart — understand the difference
 
-- [ ] **CP3 — Widget tree basics**
+- [x] **CP3 — Widget tree basics**
   - `StatelessWidget` — pure render, no mutable state (≈ a SwiftUI `View` with no `@State`)
   - `StatefulWidget` — widget + `State<T>` object; `setState()` triggers re-render
   - Understand why Flutter separates widget config from state object
   - Build: static timer display UI with hardcoded text
 
-- [ ] **CP4 — Layout widgets**
+- [x] **CP4 — Layout widgets**
   - `Column`, `Row`, `Stack`
   - `Padding`, `SizedBox`, `Expanded`, `Flexible`
   - `Container` (≈ `ZStack` + modifiers rolled into one)
@@ -134,6 +134,14 @@ Work through these in order. Each checkpoint builds on the last.
 - **Don't add packages** I haven't asked for. Suggest them with rationale; I decide.
 - **Prefer `provider`** for state management at this stage — it's the most instructive bridge from SwiftUI's environment model. Don't jump to Riverpod/Bloc unless I ask.
 - When I'm stuck, give the smallest hint first, not the full solution.
+
+### Daily Cheat Sheet Workflow
+
+At the end of each day (when I ask), produce a cheat sheet in `notes/dayN_cheatsheet.md`:
+- Summarize that day's checkpoints as quick reference, mapped SwiftUI → Flutter.
+- **Explicitly flag where I stumbled** with a ⚠️ marker, and include a "Stumble Summary" section at the bottom listing the specific mistakes to review.
+- Keep snippets minimal — patterns, not full apps.
+- After writing it, mark that day's checkpoints `[x]` in this file and tag the day heading `✅ DONE` with a link to the cheat sheet.
 
 ---
 
